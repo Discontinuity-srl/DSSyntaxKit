@@ -78,6 +78,11 @@
 
 #pragma mark - Insertions
 
+- (void)setString:(NSString *)string {
+  [super setString:string];
+  [_syntaxHighlighter parse];
+}
+
 - (void)configureContainer {
   [[self textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
   [[self textContainer] setWidthTracksTextView:NO];

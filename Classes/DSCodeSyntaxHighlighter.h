@@ -21,4 +21,6 @@
 
 - (id)initWithTextStorage:(NSTextStorage *)storage;
 
+- (void)parse;
+
 @end
