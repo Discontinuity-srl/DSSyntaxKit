@@ -1,0 +1,53 @@
+
+PODS:
+- A2DynamicDelegate (2.0.2):
+  - libffi
+- BlocksKit (1.5.2):
+  - A2DynamicDelegate
+- NoodleKit (0.0.1):
+  - NoodleKit/NSImage-NoodleExtensions (= 0.0.1)
+  - NoodleKit/NSIndexSet-NoodleExtensions (= 0.0.1)
+  - NoodleKit/NSObject-NoodlePerformWhenIdle (= 0.0.1)
+  - NoodleKit/NSResponder-NoodleModalExtensions (= 0.0.1)
+  - NoodleKit/NSTableView-NoodleExtensions (= 0.0.1)
+  - NoodleKit/NSTimer-NoodleExtensions (= 0.0.1)
+  - NoodleKit/NSWindow-NoodleEffects (= 0.0.1)
+  - NoodleKit/NoodleCustomImageRep (= 0.0.1)
+  - NoodleKit/NoodleGlue (= 0.0.1)
+  - NoodleKit/NoodleLineNumberMarker (= 0.0.1)
+  - NoodleKit/NoodleLineNumberView (= 0.0.1)
+- NoodleKit/NSImage-NoodleExtensions (0.0.1)
+- NoodleKit/NSIndexSet-NoodleExtensions (0.0.1)
+- NoodleKit/NSObject-NoodlePerformWhenIdle (0.0.1)
+- NoodleKit/NSResponder-NoodleModalExtensions (0.0.1)
+- NoodleKit/NSTableView-NoodleExtensions (0.0.1)
+- NoodleKit/NSTimer-NoodleExtensions (0.0.1)
+- NoodleKit/NSWindow-NoodleEffects (0.0.1)
+- NoodleKit/NoodleCustomImageRep (0.0.1)
+- NoodleKit/NoodleGlue (0.0.1)
+- NoodleKit/NoodleLineNumberMarker (0.0.1)
+- NoodleKit/NoodleLineNumberView (0.0.1)
+- libffi (3.0.11)
+
+DEPENDENCIES:
+- BlocksKit
+- NoodleKit
+
+SPEC CHECKSUMS:
+  A2DynamicDelegate: 013b345f1aca891ded67a95c1512fad677c260a9
+  BlocksKit: 12fbe889d9f8cc66adf5c9bd4cb0606071f214f2
+  NoodleKit: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NSImage-NoodleExtensions: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NSIndexSet-NoodleExtensions: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NSObject-NoodlePerformWhenIdle: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NSResponder-NoodleModalExtensions: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NSTableView-NoodleExtensions: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NSTimer-NoodleExtensions: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NSWindow-NoodleEffects: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NoodleCustomImageRep: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NoodleGlue: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NoodleLineNumberMarker: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  NoodleKit/NoodleLineNumberView: 3b70d9883516855c9b6f6912a97ff49a88564a6c
+  libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
+
+COCOAPODS: 0.14.0
