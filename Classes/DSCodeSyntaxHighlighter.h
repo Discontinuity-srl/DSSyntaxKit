@@ -10,17 +10,27 @@
 #import "DSSyntaxDefinition.h"
 #import "DSSyntaxTheme.h"
 
+/** The DSCodeSyntaxHighlighter is responsible of coordinating the layout 
+ managers of a text container with a syntax definition and a theme. In a 
+ nutshell it reacts to the editings of the text storage and provides 
+ temporary attributes to the layout manager. */
 @interface DSCodeSyntaxHighlighter : NSObject <NSTextStorageDelegate, NSLayoutManagerDelegate>
 
+/* The NSTextStorage that is attached to the highlighter. */
 @property (nonatomic, readonly) NSTextStorage* storage;
-@property (nonatomic, readonly) DSSyntaxDefinition* syntaxDefinition;
+
+/* The syntax definition used for the analyzing the text. */
+@property (nonatomic, strong) DSSyntaxDefinition* syntaxDefinition;
+
+/* The theme to use for highlighting the values of the syntax definition. */
 @property (nonatomic, strong) DSSyntaxTheme* theme;
 
-@property (nonatomic) BOOL indentsNewLine;
-@property (nonatomic) NSUInteger tabsWidth;
+///-----------------------------------------------------------------------------
+/// @name Initialization & disposal
+///-----------------------------------------------------------------------------
 
+/* Initializes a highlighter with the given storage. The highligther will set
+ itself as the delegate of the storage and of its layout managers. */
 - (id)initWithTextStorage:(NSTextStorage *)storage;
-
-- (void)parse;
 
 @end

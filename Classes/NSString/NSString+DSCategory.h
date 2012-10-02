@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Conding)
+@interface NSString (DSCategory)
 
 ///-----------------------------------------------------------------------------
 /// @name General

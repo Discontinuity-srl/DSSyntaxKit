@@ -7,34 +7,41 @@
 //
 
 #import "DSSyntaxCollection.h"
+#import "BlocksKit.h"
+
 #import "DSRubySyntaxDefinition.h"
 #import "DSObjectiveCSyntaxDefinition.h"
+#import "DSPodfileSyntaxDefinition.h"
+#import "DSPodspecSyntaxDefinition.h"
 
 @implementation DSSyntaxCollection {
   NSArray *_availableSyntaxes;
-  NSDictionary *_extensionsMappings;
+  NSDictionary *_namesMappings;
 }
 
 - (id)init {
   self = [super init];
   if (self) {
     _availableSyntaxes = @[
-      [DSRubySyntaxDefinition class],
-      [DSObjectiveCSyntaxDefinition class],
+    [DSRubySyntaxDefinition class],
+    [DSObjectiveCSyntaxDefinition class],
+    [DSPodfileSyntaxDefinition class],
+    [DSPodspecSyntaxDefinition class],
     ];
+
+    NSMutableDictionary *namesMappings = [NSMutableDictionary new];
+    [_availableSyntaxes each:^(Class class) {
+      namesMappings[[class name]] = class;
+    }];
+    _availableSyntaxNames = [namesMappings allKeys];
+    _namesMappings = namesMappings;
   }
   return self;
 }
 
-//- (NSString*)syntaxForName:(NSString*)name {
-//  Class class = _namesMappings[name];
-//  return [[class alloc] init];
-//}
-//
-//- (NSString*)syntaxForExtension:(NSString*)rb {
-//  
-//
-//}
-//
+- (DSSyntaxDefinition*)syntaxForName:(NSString*)name {
+  Class class = _namesMappings[name];
+  return [[class alloc] init];
+}
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
 //
 
-#import "NSString+Conding.h"
+#import "NSString+DSCategory.h"
 
-@implementation NSString (Conding)
+@implementation NSString (DSCategory)
 
 - (NSRange)range {
   return NSMakeRange(0, self.length);

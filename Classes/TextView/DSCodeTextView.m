@@ -7,12 +7,14 @@
 //
 
 #import "DSCodeTextView.h"
-#import "NoodleLineNumberView.h"
 #import "BlocksKit.h"
-#import "NSString+Conding.h"
+#import "NSString+DSCategory.h"
 
 @implementation DSCodeTextView
+
+///-----------------------------------------------------------------------------
 #pragma mark - Initialization
+///-----------------------------------------------------------------------------
 
 - (id)initWithFrame:(NSRect)frame {
   self = [super initWithFrame:frame];
@@ -34,12 +36,13 @@
   [self setAutomaticSpellingCorrectionEnabled:FALSE];
   [self setAutomaticQuoteSubstitutionEnabled:FALSE];
   
+  [self setUsesFindBar:TRUE];
   [self setAutomaticLinkDetectionEnabled:TRUE];
   [self setTabWidth:2];
 
   NSScrollView *scrollView = [self enclosingScrollView];
-  NoodleLineNumberView*lineNumberView = [[NoodleLineNumberView alloc] initWithScrollView:scrollView];
-  [scrollView setVerticalRulerView:lineNumberView];
+  _lineNumberView = [[NoodleLineNumberView alloc] initWithScrollView:scrollView];
+  [scrollView setVerticalRulerView:_lineNumberView];
   [scrollView setHasHorizontalRuler:NO];
   [scrollView setHasVerticalRuler:YES];
 
@@ -48,25 +51,35 @@
   [scrollView setHasHorizontalScroller:TRUE];
 
   NSTextStorage* contents = self.textStorage;
-  _syntaxHighlighter = [[DSCodeSyntaxHighlighter alloc] initWithTextStorage:contents];
+  _syntaxHighlighter = [[DSCodeSyntaxHighlighter alloc]
+                        initWithTextStorage:contents];
   [self setFont:[NSFont userFixedPitchFontOfSize:12.f]];
-  [self setSyntaxDefinition:_syntaxHighlighter.syntaxDefinition];
 }
 
-
-
+///-----------------------------------------------------------------------------
 #pragma mark - Properties
+///-----------------------------------------------------------------------------
+
+- (DSSyntaxDefinition *)syntaxDefinition {
+  return _syntaxHighlighter.syntaxDefinition;
+}
 
 - (void)setSyntaxDefinition:(DSSyntaxDefinition *)syntaxDefinition {
-  _syntaxDefinition = syntaxDefinition;
+  [_syntaxHighlighter setSyntaxDefinition:syntaxDefinition];
+  [self setNeedsDisplay:TRUE];
+}
+
+- (DSSyntaxTheme *)theme {
+  return _syntaxHighlighter.theme;
 }
 
 - (void)setTheme:(DSSyntaxTheme *)theme {
-  _theme = theme;
   [self setBackgroundColor:theme.backgroundColor];
   [self setInsertionPointColor:theme.cursorColor];
-  [self setSelectedTextAttributes: @{ NSBackgroundColorAttributeName : theme.selectionColor }];
+  [self setSelectedTextAttributes: @{ NSBackgroundColorAttributeName :
+                                      theme.selectionColor }];
   [_syntaxHighlighter setTheme:theme];
+  [self setNeedsDisplay:TRUE];
 }
 
 - (void)setLineNumbersVisible:(BOOL)visible {
@@ -74,13 +87,12 @@
   [scrollView setRulersVisible:visible];
 }
 
-
-
+///-----------------------------------------------------------------------------
 #pragma mark - Insertions
+///-----------------------------------------------------------------------------
 
 - (void)setString:(NSString *)string {
   [super setString:string];
-  [_syntaxHighlighter parse];
 }
 
 - (void)configureContainer {
@@ -109,14 +121,31 @@
 
   NSRange newCursorRange = [[[self selectedRanges] objectAtIndex:0] rangeValue];
   if (isRangeAtEndOfLine) {
-    NSString *completion = [_syntaxDefinition completionForNewLineAfterLine:previousLine indentation:[previousLine indentation]];
-    [self insertText:completion];
+    NSString *completion = [self.syntaxDefinition completionForNewLineAfterLine:previousLine
+                                                                    indentation:[previousLine indentation]];
+    if (completion) {
+      [self insertText:completion];
+    }
   }
   [self setSelectedRange:newCursorRange];
 }
 
-- (NSArray *)completionsForPartialWordRange:(NSRange)charRange indexOfSelectedItem:(NSInteger *)index {
-  return [_syntaxDefinition completionsForPartialWordRange:charRange indexOfSelectedItem:index];
+- (NSString*)partialLineToCursorPosition {
+  NSString* string    = self.textStorage.string;
+  NSRange cursorRange = [[[self selectedRanges] objectAtIndex:0] rangeValue];
+  NSRange lineRange   = [string lineRangeForRange:cursorRange];
+  lineRange.length = cursorRange.location - lineRange.location;
+  return [string substringWithRange:lineRange];
+}
+
+- (NSArray *)completionsForPartialWordRange:(NSRange)charRange
+                        indexOfSelectedItem:(NSInteger *)index {
+  
+  NSString *partialWord = [self.string substringWithRange:charRange];
+  NSString *partialLine = [self partialLineToCursorPosition];
+  return [self.syntaxDefinition completionsForPartialWord:partialWord
+                                              partialLine:partialLine
+                                      indexOfSelectedItem:index];
 }
 
 - (void)insertTab:(id)sender {

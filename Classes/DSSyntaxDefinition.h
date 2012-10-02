@@ -8,27 +8,80 @@
 
 #import <Foundation/Foundation.h>
 
-FOUNDATION_EXPORT NSString *const DSSyntaxDefinitionAttributeName;
+/** DSSyntaxDefinition is an abstract class reposible of defining an interface 
+ for DSCodeSyntaxHighlighter. Concrete subclasses are expected to implement its
+ properties. */
+@interface DSSyntaxDefinition : NSObject
+
+///-----------------------------------------------------------------------------
+/// @name Abstract class provided methods
+///-----------------------------------------------------------------------------
+
+- (NSAttributedString*)parseString:(NSString*)string;
+
+- (NSString*)completionForNewLineAfterLine:(NSString*)line
+                               indentation:(NSString*)indentation;
+
+- (NSArray *)completionsForPartialWord:(NSString*)partialWord
+                           partialLine:(NSString*)partiaLine
+                   indexOfSelectedItem:(NSInteger *)index;
+
+- (BOOL)shouldAutoPresentSuggentsionsForPartialLine:(NSString*)partialLine;
+
+///-----------------------------------------------------------------------------
+/// @name Methods implemented by concrete subclasses
+///-----------------------------------------------------------------------------
+
+/** The name of the language described by syntax definition. */
++ (NSString *)name;
+
+/** Common extensions used by the files of the language described by syntax
+ definition. */
++ (NSArray *)extensions;
+
+/** The list of the keywords of the language. */
+@property (nonatomic, copy) NSArray *keywords;
+
+/** A list of touples that contains the delimiters of the language. 
+    @[ @[ @"do", @"end" ],
+       @[ @"{", @"}"    ] ]; */
+@property (nonatomic, copy) NSArray *delimiters;
+
+@property (nonatomic, copy) NSArray *constantPatterns;
+
+@property (nonatomic, copy) NSArray *variablePatterns;
+
+@property (nonatomic, copy) NSArray *commentPattern;
+
+/** The list of a specific DSL keywords. */
+@property (nonatomic, copy) NSArray *DSLKeywords;
+
+/** The list of the patterns for string interpolation. */
+@property (nonatomic, copy) NSArray *stringInterpolationPatterns;
+
+/** The list of the delimiters that define strings. */
+@property (nonatomic, copy) NSArray *stringDelimiters;
+
+/** The list of the escape characters for the strings. */
+@property (nonatomic, copy) NSArray *stringEscapeCharacters;
+
+@end
+
+FOUNDATION_EXPORT NSString *const DSSyntaxTypeAttribute;
 
 FOUNDATION_EXPORT NSString *const kDSPlainTextSyntaxType;
 FOUNDATION_EXPORT NSString *const kDSCommentSyntaxType;
-FOUNDATION_EXPORT NSString *const kDSCommentKeywordSyntaxType;
 FOUNDATION_EXPORT NSString *const kDSStringSyntaxType;
 FOUNDATION_EXPORT NSString *const kDSKeywordSyntaxType;
-FOUNDATION_EXPORT NSString *const kDSInstanceVariableSyntaxType;
-FOUNDATION_EXPORT NSString *const kDSLKeywordSyntaxType;
 
-@interface DSSyntaxDefinition : NSObject
+FOUNDATION_EXPORT NSString *const kDSTypeSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSClassSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSConstantSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSVariableSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSAttributeSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSFunctionSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSCharacterSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSNumberSyntaxType;
+FOUNDATION_EXPORT NSString *const kDSMacroSyntaxType;
 
-@property (nonatomic, copy) NSAttributedString* code;
-
-@property (nonatomic, copy) NSArray *keywords;
-@property (nonatomic, copy) NSArray *delimiters;
-@property (nonatomic, copy) NSArray *dslKeywords;
-
-- (NSAttributedString*)parseString:(NSString*)code;
-
-- (NSString*)completionForNewLineAfterLine:(NSString*)line indentation:(NSString*)indentation;
-- (NSArray *)completionsForPartialWordRange:(NSRange)charRange indexOfSelectedItem:(NSInteger *)index;
-
-@end
+FOUNDATION_EXPORT NSString *const kDSDSLKeywordSyntaxType;

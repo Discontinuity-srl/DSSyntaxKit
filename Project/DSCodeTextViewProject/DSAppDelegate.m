@@ -7,18 +7,27 @@
 //
 
 #import "DSAppDelegate.h"
+#import "DSSyntaxCollection.h"
 
-@implementation DSAppDelegate
+@implementation DSAppDelegate {
+  DSSyntaxCollection *_syntaxCollection;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  _syntaxCollection = [DSSyntaxCollection new];
   [self populateSyntaxes];
   [self populateThemes];
   [self setCurrentSyntax:@"Ruby"];
   [self setCurrentTheme:self.themeNames[0]];
   [self setLineNumebersVisible:TRUE];
+
+  NSColor *numbersBackgourndColor = [NSColor colorWithCalibratedWhite:0.14f alpha:1.f];
+  [_codeTextView.lineNumberView setBackgroundColor:numbersBackgourndColor];
 }
 
-#pragma mark - Code TextView usage demonstration
+///-----------------------------------------------------------------------------
+#pragma mark - CodeTextView usage demonstration
+///-----------------------------------------------------------------------------
 
 - (void)setCurrentTheme:(NSString *)currentTheme {
   _currentTheme = currentTheme;
@@ -30,7 +39,9 @@
 - (void)setCurrentSyntax:(NSString *)currentSyntax {
   _currentSyntax = currentSyntax;
   NSString *sample = [self sampleForSyntaxNamed:currentSyntax];
+  DSSyntaxDefinition* syntaxDefinition = [_syntaxCollection syntaxForName:currentSyntax];
   [_codeTextView setString:sample];
+  [_codeTextView setSyntaxDefinition:syntaxDefinition];
 }
 
 - (void)setLineNumebersVisible:(BOOL)visible {
@@ -38,24 +49,27 @@
   [_codeTextView setLineNumbersVisible:visible];
 }
 
-
-
-#pragma mark - Population
+///-----------------------------------------------------------------------------
+#pragma mark - Population & Related logic
+///-----------------------------------------------------------------------------
 
 - (NSDictionary *)syntaxes {
   return @{
-  @"Ruby" : @"installer.rb"
+  @"Ruby"        : @"sample.rb",
+  @"Objective-C" : @"NSArray+BlocksKit.objc",
+  @"Podfile"     : @"Podfile",
+  @"Podspec"     : @"DSCodeTextView.podspec",
   };
 }
 
-/** Populates the syntax definitions */
 - (void)populateSyntaxes {
-  self.syntaxNames = [[self.syntaxes allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+  NSArray *names = [_syntaxCollection availableSyntaxNames];
+  self.syntaxNames = [names sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 }
 
 NSString *const kXcodeThemesFolder = @"~/Library/Developer/Xcode/UserData/FontAndColorThemes/";
 
-/** Populates the themes using the Xcode ones */
+/** Populates the themes using those available to Xcode. */
 - (void)populateThemes {
   NSFileManager *fm = [NSFileManager defaultManager];
   NSString *themesPath = [kXcodeThemesFolder stringByExpandingTildeInPath];
@@ -77,7 +91,7 @@ NSString *const kXcodeThemesFolder = @"~/Library/Developer/Xcode/UserData/FontAn
 }
 
 - (NSString*)sampleForSyntaxNamed:(NSString*)name {
-  NSString *path = [[NSBundle mainBundle] pathForResource:self.syntaxes[name]
+  NSString *path = [[NSBundle mainBundle] pathForResource:[self syntaxes][name]
                                                    ofType:nil];
   NSString *sample = [NSString stringWithContentsOfFile:path
                                                encoding:NSUTF8StringEncoding

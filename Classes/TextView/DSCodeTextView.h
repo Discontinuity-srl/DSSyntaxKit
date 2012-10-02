@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "DSCodeSyntaxHighlighter.h"
-
+#import "NoodleLineNumberView.h"
 
 @interface DSCodeTextView : NSTextView
 
@@ -25,7 +25,8 @@
 /** The syntax definition used by the syntax highlighter. */
 @property (nonatomic, strong) DSSyntaxDefinition *syntaxDefinition;
 
-
+/** The view used to display the line numbers. */
+@property (nonatomic, readonly) NoodleLineNumberView *lineNumberView;
 
 ///-----------------------------------------------------------------------------
 /// @name Code editing options

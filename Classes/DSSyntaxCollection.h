@@ -13,7 +13,8 @@
 
 @property (nonatomic, retain) NSArray *availableSyntaxNames;
 
-//- (NSString*)syntaxForName:(NSString*)name;
+- (DSSyntaxDefinition*)syntaxForName:(NSString*)name;
+
 //- (NSString*)syntaxForExtension:(NSString*)rb;
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
 //
 
-#import "NSMutableString+Conding.h"
+#import "NSMutableString+DSCategory.h"
 
-@implementation NSMutableString (Conding)
+@implementation NSMutableString (DSCategory)
 
 @end

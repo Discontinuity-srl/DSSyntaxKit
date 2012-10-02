@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableString (Conding)
+@interface NSMutableString (DSCategory)
 
 ///-----------------------------------------------------------------------------
 /// @name White spaces
