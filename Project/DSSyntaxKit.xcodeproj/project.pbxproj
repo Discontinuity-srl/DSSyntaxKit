@@ -28,6 +28,7 @@
 		E5C1DC081619C7FF00E816DE /* DSRubySyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DC061619C7FF00E816DE /* DSRubySyntaxDefinition.m */; };
 		E5C1DC2F161A04F700E816DE /* DSPodfileSyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DC2D161A04F700E816DE /* DSPodfileSyntaxDefinition.m */; };
 		E5C1DC30161A04F700E816DE /* DSPodspecSyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DC2E161A04F700E816DE /* DSPodspecSyntaxDefinition.m */; };
+		E5DF6F7C161B513300A8D88F /* DSSyntaxKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E5DF6F7B161B513300A8D88F /* DSSyntaxKit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		E5C1DC2C161A04E600E816DE /* DSPodspecSyntaxDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPodspecSyntaxDefinition.h; sourceTree = "<group>"; };
 		E5C1DC2D161A04F700E816DE /* DSPodfileSyntaxDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPodfileSyntaxDefinition.m; sourceTree = "<group>"; };
 		E5C1DC2E161A04F700E816DE /* DSPodspecSyntaxDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPodspecSyntaxDefinition.m; sourceTree = "<group>"; };
+		E5DF6F7B161B513300A8D88F /* DSSyntaxKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DSSyntaxKit.podspec; path = ../../../DSSyntaxKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E500CCD8161B4D000018797B /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				E5DF6F7B161B513300A8D88F /* DSSyntaxKit.podspec */,
 				E500CCD9161B4D000018797B /* NSArray+BlocksKit.objc */,
 				E500CCDA161B4D000018797B /* Podfile */,
 				E500CCDB161B4D000018797B /* sample.rb */,
@@ -274,6 +277,7 @@
 				E500CCDD161B4D000018797B /* Podfile in Resources */,
 				E500CCDE161B4D000018797B /* sample.rb in Resources */,
 				E500CCE1161B4D0A0018797B /* MainMenu.xib in Resources */,
+				E5DF6F7C161B513300A8D88F /* DSSyntaxKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
