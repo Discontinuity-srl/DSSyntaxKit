@@ -1,6 +1,6 @@
 //
 //  DSAppDelegate.m
-//  DSCodeTextViewProject
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 01/10/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
@@ -58,7 +58,7 @@
   @"Ruby"        : @"sample.rb",
   @"Objective-C" : @"NSArray+BlocksKit.objc",
   @"Podfile"     : @"Podfile",
-  @"Podspec"     : @"DSCodeTextView.podspec",
+  @"Podspec"     : @"DSSyntaxKit.podspec",
   };
 }
 

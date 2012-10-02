@@ -1,16 +1,16 @@
 //
-//  DSCodeTextView.m
-//  DSCodeTextViewDemo
+//  DSSyntaxTextView.m
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 25/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
 //
 
-#import "DSCodeTextView.h"
+#import "DSSyntaxTextView.h"
 #import "BlocksKit.h"
 #import "NSString+DSCategory.h"
 
-@implementation DSCodeTextView
+@implementation DSSyntaxTextView
 
 ///-----------------------------------------------------------------------------
 #pragma mark - Initialization
@@ -51,7 +51,7 @@
   [scrollView setHasHorizontalScroller:TRUE];
 
   NSTextStorage* contents = self.textStorage;
-  _syntaxHighlighter = [[DSCodeSyntaxHighlighter alloc]
+  _syntaxHighlighter = [[DSSyntaxHighlighter alloc]
                         initWithTextStorage:contents];
   [self setFont:[NSFont userFixedPitchFontOfSize:12.f]];
 }

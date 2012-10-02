@@ -1,23 +1,23 @@
 //
-//  DSCodeTextView.h
-//  DSCodeTextViewDemo
+//  DSSyntaxTextView.h
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 25/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
-#import "DSCodeSyntaxHighlighter.h"
+#import "DSSyntaxHighlighter.h"
 #import "NoodleLineNumberView.h"
 
-@interface DSCodeTextView : NSTextView
+@interface DSSyntaxTextView : NSTextView
 
 ///-----------------------------------------------------------------------------
 /// @name Syntax Highlighter
 ///-----------------------------------------------------------------------------
 
 /** The syntax highlighter used by the text view. */
-@property (nonatomic, readonly) DSCodeSyntaxHighlighter* syntaxHighlighter;
+@property (nonatomic, readonly) DSSyntaxHighlighter* syntaxHighlighter;
 
 /** The color theme used by the syntax highlighter. */
 @property (nonatomic, strong) DSSyntaxTheme *theme;

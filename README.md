@@ -1,3 +1,4 @@
-# DSCodeTextView
 
-Syntax highlighted NSTextView.
+# DSSyntaxKit
+
+[WIP] Syntax highlighting kit.

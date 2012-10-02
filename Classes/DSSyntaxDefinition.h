@@ -1,6 +1,6 @@
 //
 //  DSSyntaxDefinition.h
-//  DSCodeTextViewDemo
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 26/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /** DSSyntaxDefinition is an abstract class reposible of defining an interface 
- for DSCodeSyntaxHighlighter. Concrete subclasses are expected to implement its
+ for DSSyntaxHighlighter. Concrete subclasses are expected to implement its
  properties. */
 @interface DSSyntaxDefinition : NSObject
 

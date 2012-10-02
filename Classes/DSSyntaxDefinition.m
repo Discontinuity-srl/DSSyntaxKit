@@ -1,6 +1,6 @@
 //
 //  DSSyntaxDefinition.m
-//  DSCodeTextViewDemo
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 26/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
@@ -30,9 +30,10 @@ NSString *const kDSDSLKeywordSyntaxType = @"DSLKeyword";
 
 /* 
  TODO:
- - strings need to support escaping
- - strings need to support interpolation
- - fix comments in strings
+ - move to NSScanner for parsing.
+ - strings need to support escaping.
+ - strings need to support interpolation.
+ - fix comments in strings.
  - use delimiters to compute indentation level (add it as an attribute) ?
 */
 
@@ -48,7 +49,7 @@ NSString *const kDSDSLKeywordSyntaxType = @"DSLKeyword";
 - (NSAttributedString*)parseString:(NSString*)string {
   _attributed = [[NSMutableAttributedString alloc] initWithString:string];
 
-  self.stringDelimiters = @[@"%{.*}", @"\".*?\"", @"'.*?'"];
+  self.stringDelimiters = @[@"\".*?\"", @"'.*?'"];
   self.stringInterpolationPatterns = @[@"#{.*?}"];
   NSRange range = NSMakeRange(0, _attributed.length);
 

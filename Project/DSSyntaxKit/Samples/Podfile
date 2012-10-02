@@ -10,8 +10,8 @@ pod 'MAKVONotificationCenter', :head
 pod 'AFNetworking'
 pod 'DSFavIconManager'
 pod 'ReactiveCocoa'
-pod 'DSCodeTextView', :local => '~/Desktop/DSCodeTextView'
-# pod 'DSCodeTextView', :podspec => 'https://raw.github.com/Discontinuity-srl/DSCodeTextView/master/DSCodeTextView.podspec'
+pod 'DSSyntaxTextView', :local => '~/Desktop/DSSyntaxTextView'
+# pod 'DSSyntaxTextView', :podspec => 'https://raw.github.com/Discontinuity-srl/DSSyntaxTextView/master/DSSyntaxTextView.podspec'
 
 post_install do | installer |
   "POST INSTALL"

@@ -1,6 +1,6 @@
 //
-//  DSCodeSyntaxHighlighter.h
-//  DSCodeTextViewDemo
+//  DSSyntaxHighlighter.h
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 26/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
@@ -10,11 +10,11 @@
 #import "DSSyntaxDefinition.h"
 #import "DSSyntaxTheme.h"
 
-/** The DSCodeSyntaxHighlighter is responsible of coordinating the layout 
+/** The DSSyntaxHighlighter is responsible of coordinating the layout 
  managers of a text container with a syntax definition and a theme. In a 
  nutshell it reacts to the editings of the text storage and provides 
  temporary attributes to the layout manager. */
-@interface DSCodeSyntaxHighlighter : NSObject <NSTextStorageDelegate, NSLayoutManagerDelegate>
+@interface DSSyntaxHighlighter : NSObject <NSTextStorageDelegate, NSLayoutManagerDelegate>
 
 /* The NSTextStorage that is attached to the highlighter. */
 @property (nonatomic, readonly) NSTextStorage* storage;

@@ -1,12 +1,12 @@
 //
-//  DSCodeSyntaxHighlighter.m
-//  DSCodeTextViewDemo
+//  DSSyntaxHighlighter.m
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 26/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
 //
 
-#import "DSCodeSyntaxHighlighter.h"
+#import "DSSyntaxHighlighter.h"
 #import "DSSyntaxDefinition.h"
 
 /**
@@ -15,7 +15,7 @@
  - Background updates
 **/
 
-@implementation DSCodeSyntaxHighlighter {
+@implementation DSSyntaxHighlighter {
   NSAttributedString* _syntaxAttributedString;
 }
 

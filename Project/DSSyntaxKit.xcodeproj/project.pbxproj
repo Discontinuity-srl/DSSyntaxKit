@@ -8,25 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AFB82E20DB314641B88791BE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B0C0FF18EA432EAADDE6CB /* libPods.a */; };
-		E52CC1221619B90400C36918 /* DSCodeSyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CC1101619B90400C36918 /* DSCodeSyntaxHighlighter.m */; };
+		E500CCCF161B4CCC0018797B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E500CCCD161B4CCC0018797B /* main.m */; };
+		E500CCD6161B4CEC0018797B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E500CCD2161B4CEC0018797B /* Credits.rtf */; };
+		E500CCD7161B4CEC0018797B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E500CCD4161B4CEC0018797B /* InfoPlist.strings */; };
+		E500CCDC161B4D000018797B /* NSArray+BlocksKit.objc in Resources */ = {isa = PBXBuildFile; fileRef = E500CCD9161B4D000018797B /* NSArray+BlocksKit.objc */; };
+		E500CCDD161B4D000018797B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E500CCDA161B4D000018797B /* Podfile */; };
+		E500CCDE161B4D000018797B /* sample.rb in Resources */ = {isa = PBXBuildFile; fileRef = E500CCDB161B4D000018797B /* sample.rb */; };
+		E500CCE1161B4D0A0018797B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E500CCDF161B4D0A0018797B /* MainMenu.xib */; };
+		E500CCE4161B4D140018797B /* DSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E500CCE3161B4D140018797B /* DSAppDelegate.m */; };
+		E50C4AE1161B4B36009422B1 /* DSSyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = E50C4ADE161B4B36009422B1 /* DSSyntaxHighlighter.m */; };
+		E50C4AE2161B4B36009422B1 /* DSSyntaxTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E50C4AE0161B4B36009422B1 /* DSSyntaxTextView.m */; };
 		E52CC1261619B90400C36918 /* DSSyntaxCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CC1181619B90400C36918 /* DSSyntaxCollection.m */; };
 		E52CC1271619B90400C36918 /* DSSyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CC11A1619B90400C36918 /* DSSyntaxDefinition.m */; };
 		E52CC1281619B90400C36918 /* DSSyntaxTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CC11C1619B90400C36918 /* DSSyntaxTheme.m */; };
 		E52CC1291619B90400C36918 /* NSMutableString+DSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CC11F1619B90400C36918 /* NSMutableString+DSCategory.m */; };
 		E52CC12A1619B90400C36918 /* NSString+DSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CC1211619B90400C36918 /* NSString+DSCategory.m */; };
-		E52CC1311619BA6400C36918 /* sample.rb in Resources */ = {isa = PBXBuildFile; fileRef = E52CC1301619BA6400C36918 /* sample.rb */; };
 		E541972D1619B8A700A209C0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E541972C1619B8A700A209C0 /* Cocoa.framework */; };
-		E54197371619B8A700A209C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E54197351619B8A700A209C0 /* InfoPlist.strings */; };
-		E54197391619B8A700A209C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E54197381619B8A700A209C0 /* main.m */; };
-		E541973D1619B8A700A209C0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E541973B1619B8A700A209C0 /* Credits.rtf */; };
-		E54197401619B8A700A209C0 /* DSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E541973F1619B8A700A209C0 /* DSAppDelegate.m */; };
-		E54197431619B8A700A209C0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54197411619B8A700A209C0 /* MainMenu.xib */; };
-		E5808BE4161A1298007D5BF9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E5808BE3161A1298007D5BF9 /* Podfile */; };
-		E5808BE6161A12B2007D5BF9 /* DSCodeTextView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E5808BE5161A12B2007D5BF9 /* DSCodeTextView.podspec */; };
-		E5808BEA161A12E5007D5BF9 /* DSCodeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5808BE9161A12E5007D5BF9 /* DSCodeTextView.m */; };
 		E5C1DC071619C7FF00E816DE /* DSObjectiveCSyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DC041619C7FF00E816DE /* DSObjectiveCSyntaxDefinition.m */; };
 		E5C1DC081619C7FF00E816DE /* DSRubySyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DC061619C7FF00E816DE /* DSRubySyntaxDefinition.m */; };
-		E5C1DC0C1619D37000E816DE /* NSArray+BlocksKit.objc in Resources */ = {isa = PBXBuildFile; fileRef = E5C1DC091619D2D800E816DE /* NSArray+BlocksKit.objc */; };
 		E5C1DC2F161A04F700E816DE /* DSPodfileSyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DC2D161A04F700E816DE /* DSPodfileSyntaxDefinition.m */; };
 		E5C1DC30161A04F700E816DE /* DSPodspecSyntaxDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DC2E161A04F700E816DE /* DSPodspecSyntaxDefinition.m */; };
 /* End PBXBuildFile section */
@@ -34,10 +33,23 @@
 /* Begin PBXFileReference section */
 		062381F1617B451492387825 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		62B0C0FF18EA432EAADDE6CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E52CC10F1619B90400C36918 /* DSCodeSyntaxHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCodeSyntaxHighlighter.h; sourceTree = "<group>"; };
-		E52CC1101619B90400C36918 /* DSCodeSyntaxHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCodeSyntaxHighlighter.m; sourceTree = "<group>"; };
-		E52CC1171619B90400C36918 /* DSSyntaxCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSyntaxCollection.h; sourceTree = "<group>"; };
-		E52CC1181619B90400C36918 /* DSSyntaxCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSyntaxCollection.m; sourceTree = "<group>"; };
+		E500CCCC161B4CCC0018797B /* DSSyntaxKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DSSyntaxKit-Prefix.pch"; path = "DSSyntaxKit/DSSyntaxKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E500CCCD161B4CCC0018797B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DSSyntaxKit/main.m; sourceTree = SOURCE_ROOT; };
+		E500CCCE161B4CCC0018797B /* DSSyntaxKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DSSyntaxKit-Info.plist"; path = "DSSyntaxKit/DSSyntaxKit-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E500CCD3161B4CEC0018797B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = DSSyntaxKit/en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
+		E500CCD5161B4CEC0018797B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = DSSyntaxKit/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		E500CCD9161B4D000018797B /* NSArray+BlocksKit.objc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSArray+BlocksKit.objc"; sourceTree = "<group>"; };
+		E500CCDA161B4D000018797B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E500CCDB161B4D000018797B /* sample.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = sample.rb; sourceTree = "<group>"; };
+		E500CCE0161B4D0A0018797B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = DSSyntaxKit/en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		E500CCE2161B4D140018797B /* DSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSAppDelegate.h; path = DSSyntaxKit/DSAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		E500CCE3161B4D140018797B /* DSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSAppDelegate.m; path = DSSyntaxKit/DSAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		E50C4ADD161B4B36009422B1 /* DSSyntaxHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSyntaxHighlighter.h; sourceTree = "<group>"; };
+		E50C4ADE161B4B36009422B1 /* DSSyntaxHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSyntaxHighlighter.m; sourceTree = "<group>"; };
+		E50C4ADF161B4B36009422B1 /* DSSyntaxTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSyntaxTextView.h; sourceTree = "<group>"; };
+		E50C4AE0161B4B36009422B1 /* DSSyntaxTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSyntaxTextView.m; sourceTree = "<group>"; };
+		E52CC1171619B90400C36918 /* DSSyntaxCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSSyntaxCollection.h; path = ../DSSyntaxCollection.h; sourceTree = "<group>"; };
+		E52CC1181619B90400C36918 /* DSSyntaxCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSSyntaxCollection.m; path = ../DSSyntaxCollection.m; sourceTree = "<group>"; };
 		E52CC1191619B90400C36918 /* DSSyntaxDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSyntaxDefinition.h; sourceTree = "<group>"; };
 		E52CC11A1619B90400C36918 /* DSSyntaxDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSyntaxDefinition.m; sourceTree = "<group>"; };
 		E52CC11B1619B90400C36918 /* DSSyntaxTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSyntaxTheme.h; sourceTree = "<group>"; };
@@ -46,29 +58,15 @@
 		E52CC11F1619B90400C36918 /* NSMutableString+DSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+DSCategory.m"; sourceTree = "<group>"; };
 		E52CC1201619B90400C36918 /* NSString+DSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSCategory.h"; sourceTree = "<group>"; };
 		E52CC1211619B90400C36918 /* NSString+DSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSCategory.m"; sourceTree = "<group>"; };
-		E52CC1301619BA6400C36918 /* sample.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = sample.rb; sourceTree = "<group>"; };
-		E54197281619B8A700A209C0 /* DSCodeTextViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSCodeTextViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54197281619B8A700A209C0 /* DSSyntaxKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSSyntaxKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E541972C1619B8A700A209C0 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E541972F1619B8A700A209C0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E54197301619B8A700A209C0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E54197311619B8A700A209C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E54197341619B8A700A209C0 /* DSCodeTextViewProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSCodeTextViewProject-Info.plist"; sourceTree = "<group>"; };
-		E54197361619B8A700A209C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E54197381619B8A700A209C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E541973A1619B8A700A209C0 /* DSCodeTextViewProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSCodeTextViewProject-Prefix.pch"; sourceTree = "<group>"; };
-		E541973C1619B8A700A209C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		E541973E1619B8A700A209C0 /* DSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSAppDelegate.h; sourceTree = "<group>"; };
-		E541973F1619B8A700A209C0 /* DSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSAppDelegate.m; sourceTree = "<group>"; };
-		E54197421619B8A700A209C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E5808BE3161A1298007D5BF9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		E5808BE5161A12B2007D5BF9 /* DSCodeTextView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DSCodeTextView.podspec; path = ../../../DSCodeTextView.podspec; sourceTree = "<group>"; };
-		E5808BE8161A12E5007D5BF9 /* DSCodeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCodeTextView.h; sourceTree = "<group>"; };
-		E5808BE9161A12E5007D5BF9 /* DSCodeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCodeTextView.m; sourceTree = "<group>"; };
 		E5C1DC031619C7FF00E816DE /* DSObjectiveCSyntaxDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSObjectiveCSyntaxDefinition.h; sourceTree = "<group>"; };
 		E5C1DC041619C7FF00E816DE /* DSObjectiveCSyntaxDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSObjectiveCSyntaxDefinition.m; sourceTree = "<group>"; };
 		E5C1DC051619C7FF00E816DE /* DSRubySyntaxDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSRubySyntaxDefinition.h; sourceTree = "<group>"; };
 		E5C1DC061619C7FF00E816DE /* DSRubySyntaxDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSRubySyntaxDefinition.m; sourceTree = "<group>"; };
-		E5C1DC091619D2D800E816DE /* NSArray+BlocksKit.objc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSArray+BlocksKit.objc"; sourceTree = "<group>"; };
 		E5C1DC2B161A04E500E816DE /* DSPodfileSyntaxDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPodfileSyntaxDefinition.h; sourceTree = "<group>"; };
 		E5C1DC2C161A04E600E816DE /* DSPodspecSyntaxDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPodspecSyntaxDefinition.h; sourceTree = "<group>"; };
 		E5C1DC2D161A04F700E816DE /* DSPodfileSyntaxDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPodfileSyntaxDefinition.m; sourceTree = "<group>"; };
@@ -88,19 +86,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E500CCD8161B4D000018797B /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				E500CCD9161B4D000018797B /* NSArray+BlocksKit.objc */,
+				E500CCDA161B4D000018797B /* Podfile */,
+				E500CCDB161B4D000018797B /* sample.rb */,
+			);
+			name = Samples;
+			path = DSSyntaxKit/Samples;
+			sourceTree = SOURCE_ROOT;
+		};
+		E50C4ADC161B4B36009422B1 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				E50C4ADD161B4B36009422B1 /* DSSyntaxHighlighter.h */,
+				E50C4ADE161B4B36009422B1 /* DSSyntaxHighlighter.m */,
+				E50C4ADF161B4B36009422B1 /* DSSyntaxTextView.h */,
+				E50C4AE0161B4B36009422B1 /* DSSyntaxTextView.m */,
+			);
+			path = "OS X";
+			sourceTree = "<group>";
+		};
 		E52CC10E1619B90400C36918 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E5808BE7161A12E5007D5BF9 /* TextView */,
-				E52CC10F1619B90400C36918 /* DSCodeSyntaxHighlighter.h */,
-				E52CC1101619B90400C36918 /* DSCodeSyntaxHighlighter.m */,
-				E52CC1171619B90400C36918 /* DSSyntaxCollection.h */,
-				E52CC1181619B90400C36918 /* DSSyntaxCollection.m */,
+				E50C4ADC161B4B36009422B1 /* OS X */,
 				E52CC1191619B90400C36918 /* DSSyntaxDefinition.h */,
 				E52CC11A1619B90400C36918 /* DSSyntaxDefinition.m */,
-				E5C1DC021619C7FF00E816DE /* Syntax Definitions */,
 				E52CC11B1619B90400C36918 /* DSSyntaxTheme.h */,
 				E52CC11C1619B90400C36918 /* DSSyntaxTheme.m */,
+				E5C1DC021619C7FF00E816DE /* Syntax Definitions */,
 				E52CC11D1619B90400C36918 /* NSString Categories */,
 			);
 			name = Classes;
@@ -119,22 +135,11 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		E52CC12F1619BA6400C36918 /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				E5808BE5161A12B2007D5BF9 /* DSCodeTextView.podspec */,
-				E5C1DC091619D2D800E816DE /* NSArray+BlocksKit.objc */,
-				E5808BE3161A1298007D5BF9 /* Podfile */,
-				E52CC1301619BA6400C36918 /* sample.rb */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
 		E541971D1619B8A700A209C0 = {
 			isa = PBXGroup;
 			children = (
 				E52CC10E1619B90400C36918 /* Classes */,
-				E54197321619B8A700A209C0 /* DSCodeTextViewProject */,
+				E54197321619B8A700A209C0 /* DSSyntaxKit */,
 				E541972B1619B8A700A209C0 /* Frameworks */,
 				E54197291619B8A700A209C0 /* Products */,
 				062381F1617B451492387825 /* Pods.xcconfig */,
@@ -144,7 +149,7 @@
 		E54197291619B8A700A209C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E54197281619B8A700A209C0 /* DSCodeTextViewProject.app */,
+				E54197281619B8A700A209C0 /* DSSyntaxKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,42 +174,35 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		E54197321619B8A700A209C0 /* DSCodeTextViewProject */ = {
+		E54197321619B8A700A209C0 /* DSSyntaxKit */ = {
 			isa = PBXGroup;
 			children = (
-				E541973E1619B8A700A209C0 /* DSAppDelegate.h */,
-				E541973F1619B8A700A209C0 /* DSAppDelegate.m */,
-				E54197411619B8A700A209C0 /* MainMenu.xib */,
-				E52CC12F1619BA6400C36918 /* Samples */,
+				E500CCE2161B4D140018797B /* DSAppDelegate.h */,
+				E500CCE3161B4D140018797B /* DSAppDelegate.m */,
+				E500CCDF161B4D0A0018797B /* MainMenu.xib */,
+				E500CCD8161B4D000018797B /* Samples */,
 				E54197331619B8A700A209C0 /* Supporting Files */,
 			);
-			path = DSCodeTextViewProject;
+			path = DSSyntaxKit;
 			sourceTree = "<group>";
 		};
 		E54197331619B8A700A209C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E54197341619B8A700A209C0 /* DSCodeTextViewProject-Info.plist */,
-				E54197351619B8A700A209C0 /* InfoPlist.strings */,
-				E54197381619B8A700A209C0 /* main.m */,
-				E541973A1619B8A700A209C0 /* DSCodeTextViewProject-Prefix.pch */,
-				E541973B1619B8A700A209C0 /* Credits.rtf */,
+				E500CCD2161B4CEC0018797B /* Credits.rtf */,
+				E500CCD4161B4CEC0018797B /* InfoPlist.strings */,
+				E500CCCC161B4CCC0018797B /* DSSyntaxKit-Prefix.pch */,
+				E500CCCD161B4CCC0018797B /* main.m */,
+				E500CCCE161B4CCC0018797B /* DSSyntaxKit-Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E5808BE7161A12E5007D5BF9 /* TextView */ = {
-			isa = PBXGroup;
-			children = (
-				E5808BE8161A12E5007D5BF9 /* DSCodeTextView.h */,
-				E5808BE9161A12E5007D5BF9 /* DSCodeTextView.m */,
-			);
-			path = TextView;
 			sourceTree = "<group>";
 		};
 		E5C1DC021619C7FF00E816DE /* Syntax Definitions */ = {
 			isa = PBXGroup;
 			children = (
+				E52CC1171619B90400C36918 /* DSSyntaxCollection.h */,
+				E52CC1181619B90400C36918 /* DSSyntaxCollection.m */,
 				E5C1DC031619C7FF00E816DE /* DSObjectiveCSyntaxDefinition.h */,
 				E5C1DC041619C7FF00E816DE /* DSObjectiveCSyntaxDefinition.m */,
 				E5C1DC051619C7FF00E816DE /* DSRubySyntaxDefinition.h */,
@@ -220,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E54197271619B8A700A209C0 /* DSCodeTextViewProject */ = {
+		E54197271619B8A700A209C0 /* DSSyntaxKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E54197461619B8A700A209C0 /* Build configuration list for PBXNativeTarget "DSCodeTextViewProject" */;
+			buildConfigurationList = E54197461619B8A700A209C0 /* Build configuration list for PBXNativeTarget "DSSyntaxKit" */;
 			buildPhases = (
 				E54197241619B8A700A209C0 /* Sources */,
 				E54197251619B8A700A209C0 /* Frameworks */,
@@ -233,9 +231,9 @@
 			);
 			dependencies = (
 			);
-			name = DSCodeTextViewProject;
-			productName = DSCodeTextViewProject;
-			productReference = E54197281619B8A700A209C0 /* DSCodeTextViewProject.app */;
+			name = DSSyntaxKit;
+			productName = DSSyntaxKit;
+			productReference = E54197281619B8A700A209C0 /* DSSyntaxKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +246,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Discontinuity s.r.l.";
 			};
-			buildConfigurationList = E54197221619B8A700A209C0 /* Build configuration list for PBXProject "DSCodeTextViewProject" */;
+			buildConfigurationList = E54197221619B8A700A209C0 /* Build configuration list for PBXProject "DSSyntaxKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -260,7 +258,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E54197271619B8A700A209C0 /* DSCodeTextViewProject */,
+				E54197271619B8A700A209C0 /* DSSyntaxKit */,
 			);
 		};
 /* End PBXProject section */
@@ -270,13 +268,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E54197371619B8A700A209C0 /* InfoPlist.strings in Resources */,
-				E541973D1619B8A700A209C0 /* Credits.rtf in Resources */,
-				E54197431619B8A700A209C0 /* MainMenu.xib in Resources */,
-				E52CC1311619BA6400C36918 /* sample.rb in Resources */,
-				E5C1DC0C1619D37000E816DE /* NSArray+BlocksKit.objc in Resources */,
-				E5808BE4161A1298007D5BF9 /* Podfile in Resources */,
-				E5808BE6161A12B2007D5BF9 /* DSCodeTextView.podspec in Resources */,
+				E500CCD6161B4CEC0018797B /* Credits.rtf in Resources */,
+				E500CCD7161B4CEC0018797B /* InfoPlist.strings in Resources */,
+				E500CCDC161B4D000018797B /* NSArray+BlocksKit.objc in Resources */,
+				E500CCDD161B4D000018797B /* Podfile in Resources */,
+				E500CCDE161B4D000018797B /* sample.rb in Resources */,
+				E500CCE1161B4D0A0018797B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,9 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E54197391619B8A700A209C0 /* main.m in Sources */,
-				E54197401619B8A700A209C0 /* DSAppDelegate.m in Sources */,
-				E52CC1221619B90400C36918 /* DSCodeSyntaxHighlighter.m in Sources */,
 				E52CC1261619B90400C36918 /* DSSyntaxCollection.m in Sources */,
 				E52CC1271619B90400C36918 /* DSSyntaxDefinition.m in Sources */,
 				E52CC1281619B90400C36918 /* DSSyntaxTheme.m in Sources */,
@@ -316,33 +310,36 @@
 				E5C1DC081619C7FF00E816DE /* DSRubySyntaxDefinition.m in Sources */,
 				E5C1DC2F161A04F700E816DE /* DSPodfileSyntaxDefinition.m in Sources */,
 				E5C1DC30161A04F700E816DE /* DSPodspecSyntaxDefinition.m in Sources */,
-				E5808BEA161A12E5007D5BF9 /* DSCodeTextView.m in Sources */,
+				E50C4AE1161B4B36009422B1 /* DSSyntaxHighlighter.m in Sources */,
+				E50C4AE2161B4B36009422B1 /* DSSyntaxTextView.m in Sources */,
+				E500CCCF161B4CCC0018797B /* main.m in Sources */,
+				E500CCE4161B4D140018797B /* DSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E54197351619B8A700A209C0 /* InfoPlist.strings */ = {
+		E500CCD2161B4CEC0018797B /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E54197361619B8A700A209C0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E541973B1619B8A700A209C0 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E541973C1619B8A700A209C0 /* en */,
+				E500CCD3161B4CEC0018797B /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		E54197411619B8A700A209C0 /* MainMenu.xib */ = {
+		E500CCD4161B4CEC0018797B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E54197421619B8A700A209C0 /* en */,
+				E500CCD5161B4CEC0018797B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E500CCDF161B4D0A0018797B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E500CCE0161B4D0A0018797B /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -409,9 +406,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DSCodeTextViewProject/DSCodeTextViewProject-Prefix.pch";
-				INFOPLIST_FILE = "DSCodeTextViewProject/DSCodeTextViewProject-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DSSyntaxKit/DSSyntaxKit-Prefix.pch";
+				INFOPLIST_FILE = "DSSyntaxKit/DSSyntaxKit-Info.plist";
+				PRODUCT_NAME = DSSyntaxKit;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,9 +419,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DSCodeTextViewProject/DSCodeTextViewProject-Prefix.pch";
-				INFOPLIST_FILE = "DSCodeTextViewProject/DSCodeTextViewProject-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DSSyntaxKit/DSSyntaxKit-Prefix.pch";
+				INFOPLIST_FILE = "DSSyntaxKit/DSSyntaxKit-Info.plist";
+				PRODUCT_NAME = DSSyntaxKit;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -432,7 +429,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E54197221619B8A700A209C0 /* Build configuration list for PBXProject "DSCodeTextViewProject" */ = {
+		E54197221619B8A700A209C0 /* Build configuration list for PBXProject "DSSyntaxKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E54197441619B8A700A209C0 /* Debug */,
@@ -441,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E54197461619B8A700A209C0 /* Build configuration list for PBXNativeTarget "DSCodeTextViewProject" */ = {
+		E54197461619B8A700A209C0 /* Build configuration list for PBXNativeTarget "DSSyntaxKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E54197471619B8A700A209C0 /* Debug */,

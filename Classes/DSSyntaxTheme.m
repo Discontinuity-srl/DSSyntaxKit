@@ -1,6 +1,6 @@
 //
 //  DSSyntaxTheme.m
-//  DSCodeTextViewDemo
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 26/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.

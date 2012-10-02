@@ -1,6 +1,6 @@
 //
 //  DSRubySyntaxDefinition.h
-//  DSCodeTextViewDemo
+//  DSSyntaxKit
 //
 //  Created by Fabio Pelosin on 29/09/12.
 //  Copyright (c) 2012 Discontinuity s.r.l. All rights reserved.
