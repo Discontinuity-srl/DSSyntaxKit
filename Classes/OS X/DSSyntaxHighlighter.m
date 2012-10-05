@@ -26,7 +26,7 @@
     _theme = [DSSyntaxTheme defaultTheme];
   }
 
-  for (NSLayoutManager* layoutManager in _storage.layoutManagers) {
+  for (NSLayoutManager* layoutManager in self.storage.layoutManagers) {
     [layoutManager setDelegate:self];
   }
 
